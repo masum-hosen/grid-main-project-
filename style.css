@@ -8,9 +8,9 @@
   font-family: "DM Sans", system-ui;
   font-optical-sizing: auto;
 }
-body{
-  padding: 5rem;
-}
+/* body{
+  padding: 2rem;
+} */
 
 /* global css here */
 .infos{
