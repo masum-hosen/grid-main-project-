@@ -1,0 +1,223 @@
+/* google fonts here */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", system-ui;
+  font-optical-sizing: auto;
+}
+
+/* global css here */
+.infos{
+  width: 95%;
+}
+img{
+    width: 100%;
+}
+/* Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(
+    12,
+    1fr
+  ); /* 12 equal columns for better control */
+  grid-auto-rows: minmax(100px, auto); /* Flexible row heights */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Grid Items */
+.grid-item {
+  width: 99%;
+  /* padding: 20px; */
+  padding: 20px 20px 0px 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Sizes for Each Item to Match the Design */
+.create-content {
+  grid-column: span 3;/* Spans 3 out of 12 columns */
+  grid-row: span 3;
+  background-color: #fbe4ce;
+}
+.create-content .info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 7px;
+    font-weight: 400 !important;
+    
+}
+.create-content .info span{
+    color: #6b47ff;
+    font-style: italic;
+}
+
+.social-media {
+  grid-column: span 6; /* Spans 6 out of 12 columns */
+  grid-row: span 2;
+  background-color: #6b47ff;
+  color: white;
+}
+.social-media .info{
+  width: 100%;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  line-height: 65px;
+}
+.social-media .info span{
+    color: #fee089;
+}
+.social-media .info .spa{
+    color: white;
+    font-style: italic;
+}
+.social-media p{
+  margin-bottom: 25px;
+}
+.social-media img{
+    width: 30%;
+}
+.schedule-post {
+  grid-column: span 3; /* Spans 3 out of 12 columns */
+  grid-row: span 4;
+  background-color: #d4b7ff;
+}
+.schedule-post .info{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 23px;
+  line-height: 30px;
+}
+.schedule-post p{
+  margin-top: 23px;
+  text-align: left;
+}
+.manage-accounts {
+  grid-column: span 3;/* Spans 3 out of 12 columns */
+  grid-row: span 2;
+  background-color: #fcecec;
+  box-sizing: border-box;
+}
+.manage-accounts .info{
+  font-size: x-small;
+  margin-top: 18px;
+  line-height: 20px;
+  text-align: left;
+  width: 70%;
+  margin-bottom: 0;
+}
+.posting-schedule {
+  grid-column: span 3; /* Spans 3 out of 12 columns */
+  grid-row: span 2;
+  background-color: #ffe48d;
+  /* padding: 20px 20px 0px 20px; */
+  /* margin: 0px 20px 20px 0; */
+}
+.posting-schedule .info{
+  font-size: x-small;
+  line-height: 20px;
+  letter-spacing: -1px;
+  text-align: left;
+  /* width: 70%; */
+}
+
+.posting-schedule .img-div{
+  margin-top: 20px;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.posting-schedule .img-div img{
+  width: 100%;
+  
+}
+/* .posting-schedule img{
+  margin-top: 10px;
+  height: 100px;
+  overflow: hidden;
+  object-fit: cover;
+} */
+
+.write-content {
+  grid-column: span 3; /* Spans 3 out of 12 columns */
+  grid-row: span 3;
+  background-color: #fee089;
+}
+.write-content .info{
+  font-size: x-small;
+  line-height: 20px;
+  text-align: left;
+  letter-spacing: -2px;
+  margin-bottom: 15px;
+}
+.write-content img{
+  width: 100%;
+}
+.audience-growth {
+  grid-column: span 3; /* Spans 6 out of 12 columns */
+  grid-row: span 2;
+  background-color: #ffffff;
+}
+.audience-growth .info{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 20px;
+}
+.audience-growth img{
+  width: 90%;
+}
+.follower-growth {
+  grid-column: span 6; /* Spans 6 out of 12 columns */
+  grid-row: span 2;
+  background-color: #a57ce3;
+  color: white;
+}
+.follower-growth .infos{
+  width: 90%;
+  display: flex;
+}
+.follower-growth .info{
+  display: flex;
+  flex-direction: column;
+  font-size:small;
+  justify-content: center;
+  line-height: 30px;
+  text-align: left;
+}
+.img-div{
+  width: 50%;
+
+}
+.img-div img{
+  width: 80%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px){
+  .grid-container{
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item{
+    grid-column: span 6;
+  }
+  .follower-growth .infos{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+  }
+  .follower-growth .info{
+    text-align: center;
+  }
+}
